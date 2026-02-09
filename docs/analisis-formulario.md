@@ -19,17 +19,32 @@ Recolecta en un aformulario informacion de el usuario como: nombre completo, dat
 |Email | Email Input|Formato Validacion Email| si|
 |Mobile |Number Input|10 Digitos Numericos| si|
 
-### 2. Botones y Acciones
-| Botón/Acción | Ubicación | ¿Qué hace? |
-|--------------|-----------|------------|
-| [Nombre] | [Dónde está] | [Qué sucede al hacer clic] |
-| | | |
+### 2. Elementos de Selección
+| Elemento | Tipo | Opciones Disponibles | Obligatorio|
+|----------|------|---------------------|--------------|
+|Gender|Radio|Male, Female, Other| si|
+|Hobbies |Checkbox | Sports, Reading, Music|no|
+|Date of Birth|Date| Calendario|no|
+|Subjects| Multiseleccion autocomplete| Lista de materias|no|
 
-### 3. Elementos de Selección
-| Elemento | Tipo | Opciones Disponibles |
-|----------|------|---------------------|
-| [Nombre] | [Dropdown/Radio/Checkbox] | [Lista de opciones] |
-| | | |
+### 3. Campos de Texto Opcionales 
+| Campo | Tipo | Validación | Obligatorio |
+|-------|------|------------|-------------|
+|Current Address|text input |ninguna |no|
+
+
+
+### 4. Campos Dependientes
+| Campo | Tipo | Dependencia | Obligatorio |
+|-------|------|-------------|-------------|
+|State|Dropdown|independiente|no|
+|City|Dropdown|depende de la seleccion de State|no|
+
+
+
+### 5. Otros Elementos
+- **Picture: Upload de imagen (opcional)
+- **Submit: Botón de envío del formulario
 
 ## Flujo de Usuario Observado
 
