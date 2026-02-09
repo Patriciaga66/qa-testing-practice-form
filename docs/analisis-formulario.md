@@ -1,103 +1,63 @@
-# 📋 Análisis del Formulario - DemoQA Practice Form
+# 📋 Análisis de [Nombre de la Aplicación]
 
 ## Información General
-- **URL:** https://demoqa.com/automation-practice-form
-- **Tipo:** Formulario de registro estudiantil
-- **Fecha de análisis:** 8 de Febrero 2025
-- **Analista:** Paty Dixon
+- **URL:** [URL de la aplicación]
+- **Tipo de aplicación:** [Formulario / E-commerce / Blog / etc.]
+- **Fecha de análisis:** [Fecha de hoy]
+- **Analista:** [Tu nombre]
 
-## Objetivo del Formulario
-Capturar información de estudiantes incluyendo datos personales, contacto, educación y preferencias.
+## Objetivo de la Aplicación
+[Describe en 2-3 líneas qué hace esta aplicación]
 
 ## Elementos Identificados
 
-### 1. Campos de Texto Obligatorios
-| Campo | Tipo | Validación | Obligatorio |
-|-------|------|------------|-------------|
-| First Name | Text input | Alfanumérico | Sí |
-| Last Name | Text input | Alfanumérico | Sí |
-| Email | Email input | Formato email válido | Sí |
-| Mobile Number | Number input | 10 dígitos numéricos | Sí |
+### 1. Campos de Entrada
+| Campo | Tipo | Validación Observada | ¿Obligatorio? |
+|-------|------|---------------------|---------------|
+| [Nombre del campo] | [Text/Number/Email/etc] | [Qué validación tiene] | [Sí/No] |
+| | | | |
+| | | | |
 
-### 2. Campos de Selección
-| Campo | Tipo | Opciones | Obligatorio |
-|-------|------|----------|-------------|
-| Gender | Radio buttons | Male, Female, Other | Sí |
-| Date of Birth | Date picker | Calendario | No |
-| Subjects | Multi-select autocomplete | Lista de materias | No |
-| Hobbies | Checkboxes | Sports, Reading, Music | No |
+### 2. Botones y Acciones
+| Botón/Acción | Ubicación | ¿Qué hace? |
+|--------------|-----------|------------|
+| [Nombre] | [Dónde está] | [Qué sucede al hacer clic] |
+| | | |
 
-### 3. Campos de Texto Opcionales
-| Campo | Tipo | Validación | Obligatorio |
-|-------|------|------------|-------------|
-| Current Address | Text area | Texto libre | No |
+### 3. Elementos de Selección
+| Elemento | Tipo | Opciones Disponibles |
+|----------|------|---------------------|
+| [Nombre] | [Dropdown/Radio/Checkbox] | [Lista de opciones] |
+| | | |
 
-### 4. Campos Dependientes
-| Campo | Tipo | Dependencia | Obligatorio |
-|-------|------|-------------|-------------|
-| State | Dropdown | Independiente | Sí |
-| City | Dropdown | Depende de State seleccionado | Sí |
+## Flujo de Usuario Observado
 
-### 5. Otros Elementos
-- **Picture:** Upload de imagen (opcional)
-- **Submit:** Botón de envío del formulario
+1. [Paso 1: Usuario hace X]
+2. [Paso 2: Sistema responde con Y]
+3. [Paso 3: ...]
+4. [...]
 
-## Validaciones Observadas
+## Validaciones Identificadas
 
-### ✅ Validaciones que SÍ funcionan:
-- Campos obligatorios marcados con asterisco (*)
-- Email debe tener formato válido (incluir @)
-- Mobile debe ser exactamente 10 dígitos
-- City se habilita solo después de seleccionar State
+### ✅ Validaciones que funcionan:
+- [Validación 1 que observaste]
+- [Validación 2]
+- [...]
 
-### ⚠️ Posibles áreas de testing:
-- Validación de caracteres especiales en nombres
-- Límite máximo de caracteres en campos de texto
-- Comportamiento con fechas futuras/pasadas
-- Validación de formato de imagen en Picture upload
-- Comportamiento al enviar con campos opcionales vacíos
+### ⚠️ Posibles bugs o áreas de mejora:
+- [Algo que no funciona bien o podría mejorar]
+- [...]
 
-## Flujo de Usuario Esperado
+## Casos de Prueba Sugeridos
 
-1. Usuario completa campos obligatorios (First Name, Last Name, Email, Gender, Mobile)
-2. Usuario completa campos opcionales según necesidad
-3. Usuario selecciona State (esto habilita City)
-4. Usuario selecciona City
-5. Usuario hace clic en Submit
-6. Sistema valida datos
-7. Sistema muestra modal de confirmación con datos ingresados
+Basado en este análisis, se deberían crear casos para:
+- [ ] [Tipo de prueba 1 - ej: Campos obligatorios]
+- [ ] [Tipo de prueba 2 - ej: Validación de formato]
+- [ ] [Tipo de prueba 3 - ej: Flujo completo exitoso]
+- [ ] [...]
 
-## Casos de Borde Identificados
+## Observaciones Adicionales
+[Cualquier cosa importante que notaste sobre la aplicación]
 
-- ✅ Todos los campos obligatorios completos
-- ❌ Campos obligatorios vacíos
-- ❌ Email sin formato válido
-- ❌ Mobile con menos/más de 10 dígitos
-- ⚠️ Caracteres especiales en nombres
-- ⚠️ Fechas de nacimiento no realistas (ej: año 1800 o futuro)
-- ⚠️ Seleccionar City sin seleccionar State primero
-
-## Consideraciones de Testing
-
-### Browsers a Probar:
-- Chrome (última versión)
-- Firefox (última versión)
-- Edge (última versión)
-
-### Tipos de Prueba Aplicables:
-- ✅ Functional Testing
-- ✅ Validation Testing
-- ✅ UI/UX Testing
-- ✅ Cross-browser Testing
-- ✅ Negative Testing
-
-## Riesgos Identificados
-1. Dependencia entre State y City puede causar confusión
-2. No hay indicación visual clara de campos obligatorios completados
-3. Modal de confirmación puede no ser accesible en algunos navegadores
-
-## Conclusiones del Análisis
-El formulario presenta una buena estructura con validaciones básicas implementadas. Existen múltiples escenarios de prueba tanto positivos como negativos que permitirán validar la robustez de la aplicación.
-
-**Total de elementos a probar:** 11 campos + 1 botón = 12 elementos
-**Casos de prueba estimados:** Mínimo 15 casos
+## Conclusiones
+[Tu opinión sobre qué tan bien está construida la aplicación y qué necesita testing]
