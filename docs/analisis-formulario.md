@@ -1,22 +1,23 @@
-# 📋 Análisis de [Nombre de la Aplicación]
+# 📋 Análisis de DEMOQA
 
 ## Información General
-- **URL:** [URL de la aplicación]
-- **Tipo de aplicación:** [Formulario / E-commerce / Blog / etc.]
-- **Fecha de análisis:** [Fecha de hoy]
-- **Analista:** [Tu nombre]
+- **URL:** (https://demoqa.com automation-practice-form)
+- **Tipo de aplicación:** Formulario
+- **Fecha de análisis:** 09/02/2026
+- **Analista:** Patricia Gonzalez
 
 ## Objetivo de la Aplicación
-[Describe en 2-3 líneas qué hace esta aplicación]
+Recolecta en un aformulario informacion de el usuario como: nombre completo, datos de comunicacion y preferencias.
 
 ## Elementos Identificados
 
 ### 1. Campos de Entrada
 | Campo | Tipo | Validación Observada | ¿Obligatorio? |
 |-------|------|---------------------|---------------|
-| [Nombre del campo] | [Text/Number/Email/etc] | [Qué validación tiene] | [Sí/No] |
-| | | | |
-| | | | |
+|First Name | Text Input | Alfanumerico| si
+|Last Name |Text Input |Alfanunerico |si |
+|Email | Email Input|Formato Validacion Email| si|
+|Mobile |Number Input|10 Digitos Numericos| si|
 
 ### 2. Botones y Acciones
 | Botón/Acción | Ubicación | ¿Qué hace? |
